@@ -8394,10 +8394,9 @@ h1, h2, h3, h4, h5,
       opacity: 0;
       display: none; } }
 
+      
 .owl-carousel {
   position: relative;
-  touch-action: auto;
-  -ms-touch-action: auto;
  }
   .owl-carousel .owl-item {
     opacity: .4; }
@@ -8430,6 +8429,10 @@ h1, h2, h3, h4, h5,
         outline: none !important; }
       .owl-carousel .owl-dots .owl-dot.active {
         background: #b3b3b3; }
+      .owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item {
+        -ms-touch-action: auto;
+            touch-action: auto; }
+          
   .owl-carousel.home-slider {
     position: relative;
     height: 750px;
