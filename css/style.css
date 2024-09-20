@@ -8395,7 +8395,10 @@ h1, h2, h3, h4, h5,
       display: none; } }
 
 .owl-carousel {
-  position: relative; }
+  position: relative;
+  touch-action: auto;
+  -ms-touch-action: auto;
+ }
   .owl-carousel .owl-item {
     opacity: .4; }
     .owl-carousel .owl-item.active {
@@ -8431,8 +8434,7 @@ h1, h2, h3, h4, h5,
     position: relative;
     height: 750px;
     z-index: 0; 
-    touch-action: auto;
-    -ms-touch-action: auto;}
+}
     .owl-carousel.home-slider .slider-item {
       background-size: cover;
       background-repeat: no-repeat;
